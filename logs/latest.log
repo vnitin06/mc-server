@@ -57,3 +57,36 @@
 [16:04:03] [Server thread/INFO]: Done preparing level "world" (17.643s)
 [16:04:03] [Server thread/INFO]: Running delayed init tasks
 [16:04:03] [Server thread/INFO]: Done (27.472s)! For help, type "help"
+[16:07:27] [Server thread/INFO]: Stopping the server
+[16:07:27] [Server thread/INFO]: Stopping server
+[16:07:27] [Server thread/INFO]: Saving players
+[16:07:27] [Server thread/INFO]: Saving worlds
+[16:07:27] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
+[16:07:27] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world'
+[16:07:27] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world'
+[16:07:27] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world'
+[16:07:28] [Server thread/INFO]: [ChunkHolderManager] Saved 841 block chunks, 49 entity chunks, 0 poi chunks in world 'world' in 1.31s
+[16:07:28] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk I/O to halt for world 'world'
+[16:07:28] [Server thread/INFO]: [ChunkHolderManager] Halted I/O scheduler for world 'world'
+[16:07:28] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_nether]'/minecraft:the_nether
+[16:07:28] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_nether'
+[16:07:28] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world_nether'
+[16:07:28] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_nether'
+[16:07:28] [Server thread/INFO]: [ChunkHolderManager] Saved 841 block chunks, 49 entity chunks, 0 poi chunks in world 'world_nether' in 0.41s
+[16:07:28] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk I/O to halt for world 'world_nether'
+[16:07:28] [Server thread/INFO]: [ChunkHolderManager] Halted I/O scheduler for world 'world_nether'
+[16:07:28] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_the_end]'/minecraft:the_end
+[16:07:28] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_the_end'
+[16:07:28] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world_the_end'
+[16:07:28] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_the_end'
+[16:07:29] [Server thread/INFO]: [ChunkHolderManager] Saved 841 block chunks, 49 entity chunks, 0 poi chunks in world 'world_the_end' in 0.34s
+[16:07:29] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk I/O to halt for world 'world_the_end'
+[16:07:29] [Server thread/INFO]: [ChunkHolderManager] Halted I/O scheduler for world 'world_the_end'
+[16:07:29] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[16:07:29] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[16:07:29] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[16:07:29] [Server thread/INFO]: ThreadedAnvilChunkStorage: All dimensions are saved
+[16:07:29] [Server thread/INFO]: Waiting for I/O tasks to complete...
+[16:07:29] [Server thread/INFO]: All I/O tasks to complete
+[16:07:29] [Server thread/INFO]: [MoonriseCommon] Awaiting termination of worker pool for up to 60s...
+[16:07:29] [Server thread/INFO]: [MoonriseCommon] Awaiting termination of I/O pool for up to 60s...
