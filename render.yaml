@@ -1,0 +1,49 @@
+services:
+  - type: web
+    name: minecraft-server
+    env: docker
+    plan: free
+    buildCommand: "docker build -t minecraft-server ."
+    startCommand: "docker run -d -p 25565:25565 minecraft-server"
+    git:
+      branch: main
+    envVars:
+      - key: EULA
+        value: "TRUE"
+      - key: MAX_MEMORY
+        value: "2G"
+      - key: SERVER_PORT
+        value: "25565"
+  
+  - type: database
+    name: minecraft-db
+    plan: free
+    env: postgres
+    dbUser: postgres
+    dbPassword: password
+    dbName: minecraft_db
+    git:
+      branch: main
+    envVars:
+      - key: DB_HOST
+        value: "minecraft-db.render.com"
+      - key: DB_PORT
+        value: "5432"
+      - key: DB_USER
+        value: "postgres"
+      - key: DB_PASSWORD
+        value: "password"
+      - key: DB_NAME
+        value: "minecraft_db"
+
+cronJobs:
+  - name: backup-database
+    schedule: "0 2 * * *"  # Runs at 2:00 AM every day
+    command: "pg_dump -U postgres -h minecraft-db.render.com -F c minecraft_db > /backups/minecraft_db_backup.dump"
+    envVars:
+      - key: DB_USER
+        value: "postgres"
+      - key: DB_PASSWORD
+        value: "password"
+      - key: DB_NAME
+        value: "minecraft_db"
