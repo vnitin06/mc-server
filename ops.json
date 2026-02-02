@@ -1,1 +1,8 @@
-[]
+[
+  {
+    "uuid": "c693c1e9-edb0-318f-abcf-3be472d155ad",
+    "name": "Heavenly",
+    "level": 4,
+    "bypassesPlayerLimit": false
+  }
+]
